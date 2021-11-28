@@ -9,13 +9,13 @@ description: Spring源码整体结构和其中最值得阅读的部分。
 
 首先要说明的是，Spring发展到今天，代码已经非常多了，不建议通读Spring的源码，阅读最核心的，以及工作中密切相关的即可。
 
-## 1. 整体结构
+## 整体结构
 
 有关Spring框架的介绍可以从[官方文档](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/overview.html)获得。
 
 Spring 框架由组织成大约 20 个模块的功能组成。这些模块分为Core Container, Data Access/Integration, Web, AOP (Aspect Oriented Programming), Instrumentation, Test。如下图所示![spring-overview](/images/spring-overview.png)
 
-## 2. 核心组成：Core Container
+## 核心组成：Core Container
 
 这是Spring最核心的部分，也是Spring的基石。核心容器包含Spring的Core模块、Beans模块、Context模块和SpEL模块。对应到Spring源码中的子模块分别为：
 
@@ -48,7 +48,7 @@ Context是建立在其他模块基础上的一个上下文模块，它依赖core
 | ---------- | ------ |
 | spring-aop | 12K    |
 
-## 2. 其他组成部分
+## 其他组成部分
 
 + Data Access/Integration：包括 JDBC, ORM, OXM, JMS 和事务模块。
 
